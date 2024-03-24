@@ -10,7 +10,7 @@
   <!-- 
     - favicon
   -->
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <!-- <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml"> -->
 
   <!-- 
     - custom css link
@@ -25,6 +25,10 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Rubik:wght@400;500;600;700&family=Shadows+Into+Light&display=swap"
     rel="stylesheet">
+    <!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
 
   <!-- 
     - preload images
@@ -32,6 +36,12 @@
   <link rel="preload" as="image" href="./assets/images/hero-banner.png" media="min-width(768px)">
   <link rel="preload" as="image" href="./assets/images/hero-banner-bg.png" media="min-width(768px)">
   <link rel="preload" as="image" href="./assets/images/hero-bg.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-WzdSvkZv9O3uZ7vQkKAuOVyjrwzJsK1i0eM4F0zfAlbAU+gKwlGpD6pzXC4Yyk5C" crossorigin="anonymous" />
+</head>
+<body>
+
+<!-- Your content here -->
+
 
 </head>
 
@@ -404,281 +414,439 @@
       -->
 
       <section class="section food-menu" id="food-menu">
-        <div class="container">
+        <div class="container mw-1500">
+<!-- 
+          <p class="section-subtitle"></p> -->
 
-          <p class="section-subtitle">Popular Dishes</p>
-
-          <h2 class="h2 section-title">
-            Our Delicious <span class="span">Foods</span>
+          <h2 class="h2 section-title" style="text-align: center;">
+            Thực <span class="span">đơn</span>
           </h2>
 
-          <p class="section-text">
+          <!-- <p class="section-text">
             Food is any substance consumed to provide nutritional support for an organism.
-          </p>
+          </p> -->
 
+          <!-- <ul class="filter-list">
+            <li><button class="filter-btn active" data-filter="all">All</button></li>
+            <li><button class="filter-btn" data-filter="mon-lau">Món lẩu</button></li>
+            <li><button class="filter-btn" data-filter="mon-nhau">Món nhậu</button></li>
+            <li><button class="filter-btn" data-filter="nuoc-ngot">Nước ngọt</button></li>
+            <li><button class="filter-btn" data-filter="bia">Bia</button></li>
+          </ul> -->
           <ul class="fiter-list">
-
-            <li>
-              <button class="filter-btn  active">All</button>
-            </li>
-
-            <li>
-              <button class="filter-btn">Pizza</button>
-            </li>
-
-            <li>
-              <button class="filter-btn">Burger</button>
-            </li>
-
-            <li>
-              <button class="filter-btn">Drinks</button>
-            </li>
-
-            <li>
-              <button class="filter-btn">Sandwich</button>
-            </li>
-
+            <li><button class="filter-btn active" data-filter="all">All</button></li>
+            <li><button class="filter-btn" data-filter="lau">Món lẩu</button></li>
+            <li><button class="filter-btn" data-filter="nhau">Món nhậu</button></li>
+            <li><button class="filter-btn" data-filter="nuoc-ngot">Nước ngọt</button></li>
+            <li><button class="filter-btn" data-filter="bia">Bia</button></li>
           </ul>
 
-          <ul class="food-menu-list">
+       
 
-            <li>
-              <div class="food-menu-card">
 
-                <div class="card-banner">
-                  <img src="./assets/images/food-menu-1.png" width="300" height="300" loading="lazy"
-                    alt="Fried Chicken Unlimited" class="w-100">
+           <ul class="food-menu-list">
+            <li class="food-menu-card nhau">
+              <div class="card-banner">
+                <img src="./assets/images/one.jpg" width="300" height="300" loading="lazy"
+                  alt="Kung Pao Chicken BBQ" class="w-100">
 
-                  <div class="badge">-15%</div>
-
-                  <button class="btn food-menu-btn">Order Now</button>
-                </div>
-
-                <div class="wrapper">
-                  <p class="category">Chicken</p>
-
-                  <div class="rating-wrapper">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                  </div>
-                </div>
-
-                <h3 class="h3 card-title">Fried Chicken Unlimited</h3>
-
-                <div class="price-wrapper">
-
-                  <p class="price-text">Price:</p>
-
-                  <data class="price">$49.00</data>
-
-                  <del class="del" value="69.00">$69.00</del>
-
-                </div>
-
+                
+                
               </div>
-            </li>
 
-            <li>
-              <div class="food-menu-card">
-
-                <div class="card-banner">
-                  <img src="./assets/images/food-menu-2.png" width="300" height="300" loading="lazy"
-                    alt="Burger King Whopper" class="w-100">
-
-                  <div class="badge">-10%</div>
-
-                  <button class="btn food-menu-btn">Order Now</button>
-                </div>
-
-                <div class="wrapper">
-                  <p class="category">Noddles</p>
-
-                  <div class="rating-wrapper">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                  </div>
-                </div>
-
-                <h3 class="h3 card-title">Burger King Whopper</h3>
-
-                <div class="price-wrapper">
-
-                  <p class="price-text">Price:</p>
-
-                  <data class="price" value="29.00">$29.00</data>
-
-                  <del class="del">$39.00</del>
-
-                </div>
-
+              <div class="wrapper">
+              
+               
               </div>
+
+
+              <!-- <div class="price-wrapper">
+
+                <p class="price-text">Price:</p>
+
+                <data class="price" value="49.00">$49.00</data>
+
+              
+
+              </div> -->
             </li>
+            <li class="food-menu-card nhau">
+              <div class="card-banner">
+                <img src="./assets/images/two.jpg" width="300" height="300" loading="lazy"
+                  alt="Wendy's Chicken" class="w-100">
 
-            <li>
-              <div class="food-menu-card">
+                
 
-                <div class="card-banner">
-                  <img src="./assets/images/food-menu-3.png" width="300" height="300" loading="lazy"
-                    alt="White Castle Pizzas" class="w-100">
-
-                  <div class="badge">-25%</div>
-
-                  <button class="btn food-menu-btn">Order Now</button>
-                </div>
-
-                <div class="wrapper">
-                  <p class="category">Pizzas</p>
-
-                  <div class="rating-wrapper">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                  </div>
-                </div>
-
-                <h3 class="h3 card-title">White Castle Pizzas</h3>
-
-                <div class="price-wrapper">
-
-                  <p class="price-text">Price:</p>
-
-                  <data class="price" value="49.00">$49.00</data>
-
-                  <del class="del">$69.00</del>
-
-                </div>
-
+                
               </div>
-            </li>
 
-            <li>
-              <div class="food-menu-card">
-
-                <div class="card-banner">
-                  <img src="./assets/images/food-menu-4.png" width="300" height="300" loading="lazy"
-                    alt="Bell Burrito Supreme" class="w-100">
-
-                  <div class="badge">-20%</div>
-
-                  <button class="btn food-menu-btn">Order Now</button>
-                </div>
-
-                <div class="wrapper">
-                  <p class="category">Burrito</p>
-
-                  <div class="rating-wrapper">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                  </div>
-                </div>
-
-                <h3 class="h3 card-title">Bell Burrito Supreme</h3>
-
-                <div class="price-wrapper">
-
-                  <p class="price-text">Price:</p>
-
-                  <data class="price" value="59.00 ">$59.00</data>
-
-                  <del class="del">$69.00</del>
-
-                </div>
-
+              <div class="wrapper">
+               
+               
               </div>
+
+             
+              <!-- <div class="price-wrapper">
+
+                <p class="price-text">Price:</p>
+
+                <data class="price" value="49.00">$49.00</data>
+
+               
+
+              </div> -->
             </li>
+            
+          
+            <li class="food-menu-card nhau">
+              <div class="card-banner">
+                <img src="./assets/images/five.jpg" width="300" height="300" loading="lazy"
+                  alt="Fried Chicken Unlimited" class="w-100">
 
-            <li>
-              <div class="food-menu-card">
+                
 
-                <div class="card-banner">
-                  <img src="./assets/images/food-menu-5.png" width="300" height="300" loading="lazy"
-                    alt="Kung Pao Chicken BBQ" class="w-100">
-
-                  <div class="badge">-5%</div>
-
-                  <button class="btn food-menu-btn">Order Now</button>
-                </div>
-
-                <div class="wrapper">
-                  <p class="category">Nuggets</p>
-
-                  <div class="rating-wrapper">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                  </div>
-                </div>
-
-                <h3 class="h3 card-title">Kung Pao Chicken BBQ</h3>
-
-                <div class="price-wrapper">
-
-                  <p class="price-text">Price:</p>
-
-                  <data class="price" value="49.00">$49.00</data>
-
-                  <del class="del">$69.00</del>
-
-                </div>
-
+                
               </div>
-            </li>
 
-            <li>
-              <div class="food-menu-card">
+              <div class="wrapper">
+              
 
-                <div class="card-banner">
-                  <img src="./assets/images/food-menu-6.png" width="300" height="300" loading="lazy"
-                    alt="Wendy's Chicken" class="w-100">
-
-                  <div class="badge">-15%</div>
-
-                  <button class="btn food-menu-btn">Order Now</button>
-                </div>
-
-                <div class="wrapper">
-                  <p class="category">Chicken</p>
-
-                  <div class="rating-wrapper">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                  </div>
-                </div>
-
-                <h3 class="h3 card-title">Wendy's Chicken</h3>
-
-                <div class="price-wrapper">
-
-                  <p class="price-text">Price:</p>
-
-                  <data class="price" value="49.00">$49.00</data>
-
-                  <del class="del">$69.00</del>
-
-                </div>
-
+               
               </div>
-            </li>
 
+            
+
+              <!-- <div class="price-wrapper">
+
+                <p class="price-text">Price:</p>
+
+                <data class="price">$49.00</data> -->
+
+                
+            </li>
+            <li class="food-menu-card nhau">
+              <div class="card-banner">
+                <img src="./assets/images/thap.jpg" width="300" height="300" loading="lazy"
+                  alt="Fried Chicken Unlimited" class="w-100">
+
+                
+
+                
+              </div>
+
+              <div class="wrapper">
+              
+
+               
+              </div>
+
+            
+
+              <!-- <div class="price-wrapper">
+
+                <p class="price-text">Price:</p>
+
+                <data class="price">$49.00</data> -->
+
+                
+            </li>
+            <li class="food-menu-card lau">
+              <div class="card-banner">
+                <img src="./assets/images/ten.jpg" width="300" height="300" loading="lazy"
+                  alt="Fried Chicken Unlimited" class="w-100">
+
+                
+
+                
+              </div>
+
+              <div class="wrapper">
+              
+
+               
+              </div>
+
+            
+
+              <!-- <div class="price-wrapper">
+
+                <p class="price-text">Price:</p>
+
+                <data class="price">$49.00</data> -->
+
+                
+            </li>
+            <li class="food-menu-card lau">
+              <div class="card-banner">
+                <img src="./assets/images/nguquybo.jpg" width="300" height="300" loading="lazy"
+                  alt="Fried Chicken Unlimited" class="w-100">
+
+                
+
+                
+              </div>
+
+              <div class="wrapper">
+              
+
+               
+              </div>
+
+            
+
+              <!-- <div class="price-wrapper">
+
+                <p class="price-text">Price:</p>
+
+                <data class="price">$49.00</data> -->
+
+                
+            </li>
+            <li class="food-menu-card lau">
+              <div class="card-banner">
+                <img src="./assets/images/bapbo.jpg" width="300" height="300" loading="lazy"
+                  alt="Fried Chicken Unlimited" class="w-100">
+
+                
+
+                
+              </div>
+
+              <div class="wrapper">
+              
+
+               
+              </div>
+
+            
+
+              <!-- <div class="price-wrapper">
+
+                <p class="price-text">Price:</p>
+
+                <data class="price">$49.00</data> -->
+
+                
+            </li>
+            <li class="food-menu-card nhau">
+              <div class="card-banner">
+                <img src="./assets/images/six.jpg" width="300" height="300" loading="lazy"
+                  alt="Bell Burrito Supreme" class="w-100">
+
+                
+
+                
+              </div>
+
+              <div class="wrapper">
+                
+
+               
+              </div>
+
+            
+
+              <!-- <div class="price-wrapper">
+
+                <p class="price-text">Price:</p>
+
+                <data class="price" value="59.00 ">$59.00</data>
+
+                
+
+              </div> -->
+            </li>
+            <li class="food-menu-card nhau">
+              <div class="card-banner">
+                <img src="./assets/images/nhauone.jpg" width="300" height="300" loading="lazy"
+                  alt="Bell Burrito Supreme" class="w-100">
+
+                
+
+                
+              </div>
+
+              <div class="wrapper">
+                
+
+               
+              </div>
+
+            
+
+              <!-- <div class="price-wrapper">
+
+                <p class="price-text">Price:</p>
+
+                <data class="price" value="59.00 ">$59.00</data>
+
+                
+
+              </div> -->
+            </li>
+            <li class="food-menu-card nhau">
+              <div class="card-banner">
+                <img src="./assets/images/four.jpg" width="300" height="300" loading="lazy"
+                  alt="Bell Burrito Supreme" class="w-100">
+
+                
+
+                
+              </div>
+
+              <div class="wrapper">
+                
+
+               
+              </div>
+
+            
+
+              <!-- <div class="price-wrapper">
+
+                <p class="price-text">Price:</p>
+
+                <data class="price" value="59.00 ">$59.00</data>
+
+                
+
+              </div> -->
+            </li>
+            <li class="food-menu-card nhau">
+              <div class="card-banner">
+                <img src="./assets/images/elven.jpg" width="300" height="300" loading="lazy"
+                  alt="Bell Burrito Supreme" class="w-100">
+
+                
+
+                
+              </div>
+
+              <div class="wrapper">
+                
+
+               
+              </div>
+
+            
+
+              <!-- <div class="price-wrapper">
+
+                <p class="price-text">Price:</p>
+
+                <data class="price" value="59.00 ">$59.00</data>
+
+                
+
+              </div> -->
+            </li>
+            <li class="food-menu-card nuoc-ngot">
+              <div class="card-banner">
+                <img src="./assets/images/ngot1.jpg" width="300" height="300" loading="lazy"
+                  alt="Kung Pao Chicken BBQ" class="w-100">
+
+                
+                
+              </div>
+
+              <div class="wrapper">
+                
+
+               
+              </div>
+
+
+              <!-- <div class="price-wrapper">
+
+                <p class="price-text">Price:</p>
+
+                <data class="price" value="49.00">$49.00</data>
+
+              
+
+              </div> -->
+            </li>
+            <li class="food-menu-card nuoc-ngot">
+              <div class="card-banner">
+                <img src="./assets/images/pesi.jpg" width="300" height="300" loading="lazy"
+                  alt="Kung Pao Chicken BBQ" class="w-100">
+
+                
+                
+              </div>
+
+              <div class="wrapper">
+                
+
+               
+              </div>
+
+
+              <!-- <div class="price-wrapper">
+
+                <p class="price-text">Price:</p>
+
+                <data class="price" value="49.00">$49.00</data>
+
+              
+
+              </div> -->
+            </li>
+            <li class="food-menu-card nuoc-ngot">
+              <div class="card-banner">
+                <img src="./assets/images/7up.jpg" width="300" height="300" loading="lazy"
+                  alt="Kung Pao Chicken BBQ" class="w-100">
+
+                
+                
+              </div>
+
+              <div class="wrapper">
+                
+
+               
+              </div>
+
+
+              <!-- <div class="price-wrapper">
+
+                <p class="price-text">Price:</p>
+
+                <data class="price" value="49.00">$49.00</data>
+
+              
+
+              </div> -->
+            </li>
+            <li class="food-menu-card bia">
+              <div class="card-banner">
+                <img src="./assets/images/biahuda.jpg" width="300" height="300" loading="lazy"
+                  alt="Bell Burrito Supreme" class="w-100">
+
+                
+
+                
+              </div>
+
+              <div class="wrapper">
+               
+
+               
+              </div>
+
+            
+<!-- 
+              <div class="price-wrapper">
+
+                <p class="price-text">Price:</p>
+
+                <data class="price" value="59.00 ">$59.00</data>
+
+                
+
+              </div> -->
+            </li>
           </ul>
-
-
         </div>
       </section>
 
@@ -692,29 +860,39 @@
 
       <section class="section section-divider white cta" >
         <div class="container">
-
+          <div class="your-class">
+            <div >
+              <img src="./assets/images/ban3.jpg" alt="" class="img-fluid slick-img">
+            </div>
+            <div >
+              <img src="./assets/images/ban2.jpg" alt="" class="img-fluid slick-img">
+            </div>
+            <div >
+              <img src="./assets/images/ban3.jpg" alt="" class="img-fluid slick-img">
+            </div>
+            <div >
+              <img src="./assets/images/ban2.jpg" alt="" class="img-fluid slick-img">
+            </div>
+          </div>
           <div class="cta-content">
 
             <h2 class="h2 section-title">
-              Bề bề 
-              <span class="span">rang muối</span>
+              Giới thiệu 
+              <span class="span">nhà hàng</span>
             </h2>
 
             <p class="section-text">
-              Món bề bề rang muối là một món ăn biến tấu từ loại hải sản phổ biến và phong phú tại Việt Nam là bề bề, cũng gọi là sò điệp. Món này mang lại hương vị đặc trưng của bề bề kết hợp với vị mặn mòi và thơm ngon của muối, tạo nên một trải nghiệm ẩm thực độc đáo và hấp dẫn
+              Nhà Hàng Hương Duyên Restaurant
+               là điểm đến lý tưởng cho mọi thực khách đang tìm kiếm một trải nghiệm ẩm thực tuyệt vời. Với không gian thoáng đãng và ấm cúng, nhà hàng mang đến không chỉ là những bữa ăn ngon miệng mà còn là không gian lý tưởng để tận hưởng thời gian bên gia đình và bạn bè.
             </p>
 
-            <button class="btn btn-hover">220k/1</button>
+           
           </div>
 
-          <figure class="cta-banner">
-            <img src="./assets/images/tomrit.png"  loading="lazy" alt="Burger"
-              class=" cta-img">
-
-            
-          </figure>
+       
 
         </div>
+       
       </section>
 
 
@@ -958,7 +1136,7 @@
                   <img src="./assets/images/blog-1.jpg" width="600" height="390" loading="lazy"
                     alt="What Do You Think About Cheese Pizza Recipes?" class="w-100">
 
-                  <div class="badge">Pizza</div>
+                  >
                 </div>
 
                 <div class="card-content">
@@ -1005,7 +1183,7 @@
                   <img src="./assets/images/blog-2.jpg" width="600" height="390" loading="lazy"
                     alt="Making Chicken Strips With New Delicious Ingridents." class="w-100">
 
-                  <div class="badge">Burger</div>
+                  v>
                 </div>
 
                 <div class="card-content">
@@ -1052,7 +1230,7 @@
                   <img src="./assets/images/blog-3.jpg" width="600" height="390" loading="lazy"
                     alt="Innovative Hot Chessyraw Pasta Make Creator Fact." class="w-100">
 
-                  <div class="badge">Chicken</div>
+                  iv>
                 </div>
 
                 <div class="card-content">
@@ -1123,7 +1301,7 @@
 
           <p class="footer-text">
             
-Nhà hàng chúng tôi là điểm đến lý tưởng cho hương vị độc đáo và chất lượng tuyệt vời. Với menu đa dạng và không gian sang trọng, chúng tôi cam kết mang đến trải nghiệm ẩm thực xuất sắc nhất cho bạn. Hãy đến và khám phá cùng chúng tôi
+Nhà hàng chúng tôi là điểm đến lý tưởng cho hương vị  độc đáo và chất lượng tuyệt vời. Với menu đa dạng và không gian sang trọng, chúng tôi cam kết mang đến trải nghiệm ẩm thực xuất sắc nhất cho bạn. Hãy đến và khám phá cùng chúng tôi
           </p>
 
           <ul class="social-list">
@@ -1248,10 +1426,19 @@ Nhà hàng chúng tôi là điểm đến lý tưởng cho hương vị độc �
     - #BACK TO TOP
   -->
 
-  <a href="#top" class="back-top-btn" aria-label="Back to top" data-back-top-btn>
+  <!-- <a href="#top" class="back-top-btn" aria-label="Back to top" data-back-top-btn>
     <ion-icon name="chevron-up"></ion-icon>
+  </a> -->
+  <a href="" class="message">
+    <img src="https://bizweb.dktcdn.net/100/465/509/themes/877251/assets/zalo.png?1681972829722" alt="">
   </a>
-
+  <a href="https://www.facebook.com/profile.php?id=100034065530012" class="phone">
+    <img src="./assets/images/images__1_-removebg-preview.png" class="w-100"  alt="">
+  </a>
+  <a href="" class="zalo">
+    <img src="./assets/images/phone_food-removebg-preview.png" class="w-100"  alt="">
+  </a>
+  
 
 
 
@@ -1266,7 +1453,32 @@ Nhà hàng chúng tôi là điểm đến lý tưởng cho hương vị độc �
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+  <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script
+type="text/javascript"
+src="https://code.jquery.com/jquery-1.11.0.min.js"
+></script>
+<script
+type="text/javascript"
+src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+></script>
+<script
+type="text/javascript"
+src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+></script>
+<script>
+  $('.your-class').slick({
+    dots: false,
+  infinite: true,
+  speed: 400,
+  fade: true,
+  cssEase: 'linear',
+  autoplay:true
+});
+	
+</script>
 </body>
 
 </html>
